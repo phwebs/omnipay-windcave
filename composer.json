@@ -1,5 +1,5 @@
 {
-    "name": "digistorm/omnipay-windcave",
+    "name": "phwebs/omnipay-windcave",
     "type": "library",
     "description": "Windcave (Payment Express) REST API driver for the Omnipay payment processing library",
     "keywords": [
@@ -11,16 +11,18 @@
         "windcave",
         "payment express"
     ],
-    "homepage": "https://github.com/digistorm/omnipay-windcave",
+    "homepage": "https://github.com/phwebs/omnipay-windcave",
     "license": "MIT",
     "autoload": {
-        "psr-4": { "Omnipay\\Windcave\\" : "src/" }
+        "psr-4": {
+            "Omnipay\\Windcave\\": "src/"
+        }
     },
     "require": {
-        "omnipay/common": "^3"
+        "omnipay/common": "^2"
     },
     "require-dev": {
-        "omnipay/tests": "^3",
+        "omnipay/tests": "^2",
         "phpunit/phpunit": "^5.7|^6"
     },
     "prefer-stable": true

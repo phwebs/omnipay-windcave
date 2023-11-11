@@ -103,6 +103,24 @@ class Gateway extends AbstractGateway
     }
 
     /**
+     * Get Notification URL
+     * @return array
+     */
+    public function getNotificationURL()
+    {
+        return $this->getParameter('notificationURL');
+    }
+
+    /**
+     * Set Notification URL
+     * @param array $value
+     */
+    public function setNotificationURL($value)
+    {
+        return $this->setParameter('notificationURL', $value);
+    }
+
+    /**
      * Get Merchant
      * @return string Merchant ID
      */

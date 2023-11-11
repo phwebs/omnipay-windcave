@@ -120,7 +120,16 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
      */
     public function getHttpMethod()
     {
-        return 'GET';
+        return $this->getParameter('httpMethod');
+    }
+
+    /**
+     * Set HTTP method
+     * @return string HTTP method (GET, PUT, etc)
+     */
+    public function setHttpMethod($value)
+    {
+        return $this->setParameter('httpMethod', $value);
     }
 
     /**
